@@ -1,5 +1,6 @@
-# Análise de Ficheiro JSON e Conversão para Protegé
-Este repositório contém um script em Python que analisa um ficheiro JSON com informações sobre plantas, e converte esses dados em código Turtle (TTL) para ser utilizado no Protegé.
+# TPC1- Conversão de um ficheiro JSON para Intologia Protegé
+
+Este tpc foca-se na transição eficiente dos registos de plantas, inicialmente armazenados em formato JSON, para uma ontologia RDF através da serialização Turtle (TTL).Este trabalho visa proporcionar uma base sólida para a exploração e análise no contexto do Protegé.
 
 # Estrutura do Ficheiro JSON
 O ficheiro JSON tem a seguinte estrutura:
