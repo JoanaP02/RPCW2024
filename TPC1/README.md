@@ -1,4 +1,4 @@
-# TPC1- Conversão de um ficheiro JSON para Intologia Protegé
+# TPC1- Conversão de um ficheiro JSON para Protegé
 
 Este tpc foca-se na transição eficiente dos registos de plantas, inicialmente armazenados em formato JSON, para uma ontologia RDF através da serialização Turtle (TTL).Este trabalho visa proporcionar uma base sólida para a exploração e análise no contexto do Protegé.
 
