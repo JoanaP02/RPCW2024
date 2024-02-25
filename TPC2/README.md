@@ -5,9 +5,7 @@ Autor: Joana Pereira
 UC: RPCW
 ---
 
-# TPC2: Dataset Escola de Música
-
-## Descrição
+# Dataset Escola de Música
 
 Este trabalho tem como objetivo analisar, modelar e representar um conjunto de dados relacionados a uma Escola de Música. O dataset inclui informações sobre alunos, instrumentos e cursos.
 
