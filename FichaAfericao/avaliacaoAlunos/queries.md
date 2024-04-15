@@ -54,14 +54,16 @@ decrescente do total: idAluno, nome, curso, total = somatório dos resultados do
     ```sql
 PREFIX : <http://rpcw.di.uminho.pt/2024/avaliacao/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-select ?s ?nome ?curso (SUM(?notatpc)as ?n) where {
-    ?s  rdf:type :Aluno ;
-    	:temTPC ?tpc ;
-    	:idAluno ?idAluno ;
-    	:nome ?nome ;
-    	:curso ?curso .
-    ?tpc :nota ?notatpc .
-} Group by ?s ?nome ?curso Order by Desc (?n)
+PREFIX : <http://rpcw.di.uminho.pt/2024/avaliacao/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?nome ?curso ?notaProjeto WHERE {
+      ?aluno a :Aluno;
+         :curso ?curso;
+         :nome ?nome;
+         :idAluno "PG49576";
+         :projeto ?notaProjeto .
+}
+
 ```
 
 6 - Qual a distribuição dos alunos pelos vários cursos? (lista de cursos, ordenada alfabeticamente
@@ -75,3 +77,4 @@ select ?curso (COUNT(?s)as ?nalunos) where {
     	:curso ?curso
 } Group by ?curso Order by Asc (?curso)
 ```
+
