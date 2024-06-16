@@ -36,7 +36,7 @@ def tratardadosFilme(dados):
     return filme
     
 #GraphDB endpoint
-graphdb_endpoint = "http://epl.di.uminho.pt:7200/repositories/cinema2024"
+graphdb_endpoint = "http://epl.di.uminho.pt:7200/repositories/"
 
 @app.route("/")
 def index():
